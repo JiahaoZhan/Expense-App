@@ -12,5 +12,5 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.database().ref().set({ name: "Jiahao" });
-firebase.database().ref("name").set("good");
+const database = firebase.database();
+export { firebase, database as default };
